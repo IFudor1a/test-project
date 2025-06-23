@@ -19,7 +19,7 @@ export const CreateDialog = () => {
        setOpen(false)
     }
     return (
-        <Dialog open={open}>
+        <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger asChild>
                 <Button onClick={() => setOpen(true)}>
                     Создать событие
