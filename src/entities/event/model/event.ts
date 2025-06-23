@@ -12,7 +12,7 @@ export type EventBaseForm = {
     status: Status,
 }
 
-export type EventCreate = Omit<EventBaseForm, 'status'> & {};
+export type EventCreate = Omit<EventBaseForm, 'status'>;
 
 export type EventUpdate = EventBaseForm & {
     id: number,

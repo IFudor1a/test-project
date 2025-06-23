@@ -31,10 +31,8 @@ const BaseUpdateForm = ({
             }
         }
     );
-    console.log(form.watch())
     const formSubmit = async (formData: UpdateForm) => {
         setLoading(true);
-        console.log(formData)
         try {
             onSubmit(formData)
         } catch (e) {
